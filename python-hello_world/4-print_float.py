@@ -9,4 +9,3 @@ number = 3.14159
 # Print the float with 2 decimal places using f-string formatting.
 # The ':.2f' inside the f-string formats the float to two decimal places.
 print(f"Float: {number:.2f}")
-

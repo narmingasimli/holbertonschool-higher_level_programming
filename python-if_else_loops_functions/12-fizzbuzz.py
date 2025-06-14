@@ -1,4 +1,11 @@
 #!/usr/bin/python3
+# This script defines a function that prints numbers from 1 to 100.
+# It implements the FizzBuzz logic:
+# - Multiples of 3 print "Fizz"
+# - Multiples of 5 print "Buzz"
+# - Multiples of both 3 and 5 print "FizzBuzz"
+# Each element is followed by a space, and no modules are imported.
+
 def fizzbuzz():
     """
     Prints numbers from 1 to 100 according to the FizzBuzz rules.

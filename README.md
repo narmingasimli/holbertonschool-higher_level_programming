@@ -1,1 +1,1 @@
-My Holberton School projects
+My Holberton School Higher-Level Programming Projects

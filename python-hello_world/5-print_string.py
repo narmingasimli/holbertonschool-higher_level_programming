@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-# This script prints a string three times and then its first 9 characters.
-# It adheres to the specific line count and no-loop/no-conditional constraints.
+# Bu script bir metni uc kez ve ardindan ilk 9 karakterini yazdirir.
+# Belirtilen satir sinirlarina ve dongu/kosulsuzluk kosullarina uyar.
 
-str = "Holberton School" # The variable 'str' is provided by the task.
+str = "Holberton School" # 'str' degiskeni gorev tarafindan saglanir.
 
-# Print the string three times, followed by a newline (default for print).
+# Metni uc kez yazdirir, ardindan yeni bir satir gelir (print icin varsayilan).
 print(str * 3)
 
-# Print the first 9 characters of the string, followed by a newline.
+# Metnin ilk 9 karakterini yazdirir, ardindan yeni bir satir gelir.
 print(str[:9])

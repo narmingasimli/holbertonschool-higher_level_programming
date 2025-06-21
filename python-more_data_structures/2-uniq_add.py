@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-def square_matrix_simple(matrix=[]):
-    new_matrix = []
-    for row in matrix:
-        new_row = [x**2 for x in row]
-        new_matrix.append(new_row)
-    return new_matrix
+def uniq_add(my_list=[]):
+    my_new_list = set(my_list)
+    sum = 0
+    for number in my_new_list:
+        sum += number
+    return sum

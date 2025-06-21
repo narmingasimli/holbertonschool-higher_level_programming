@@ -1,0 +1,20 @@
+#!/usr/bin/python3
+import importlib.machinery 
+import sys 
+import os 
+if __name__ == "__main__":
+    module_path = "/tmp/hidden_4.pyc"
+    if not os.path.exists(module_path):
+        print(f"Xəta: '{module_path}' tapılmadı. Zəhmət olmasa, 'curl' əmri ilə yükləyin.", file=sys.stderr)
+        sys.exit(1)
+    try:
+        loader = importlib.machinery.SourceFileLoader("hidden_4", module_path)
+        hidden_4 = loader.load_module()
+        all_names = dir(hidden_4)
+        sorted_names = sorted(all_names)
+        for name in sorted_names:
+            if not name.startswith('__'):
+                print(name)
+    except Exception as e:
+        print(f"Modulu yükləyərkən və ya emal edərkən xəta baş verdi: {e}", file=sys.stderr)
+        sys.exit(1)

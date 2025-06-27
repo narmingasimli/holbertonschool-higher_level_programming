@@ -1,10 +1,6 @@
 #!/usr/bin/python3
-'''
-This is the documentation
-'''
+'''Rectangle'''
 
 class Rectangle:
-    '''
-    This is the documentation
-    '''
+    '''Rectangle'''
     pass

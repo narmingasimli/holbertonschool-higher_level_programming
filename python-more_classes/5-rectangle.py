@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 '''smt'''
 
@@ -68,4 +67,3 @@ class Rectangle:
 
     def __del__(self):
         print("Bye rectangle...")
-

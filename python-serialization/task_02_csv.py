@@ -4,13 +4,15 @@ import json
 
 def convert_csv_to_json(csv_filename):
     try:
-        with open(csv_filename, "r", encoding="utf-8") as f:
-            csv_reader = csv.DictReader(f)
-            data = list(csv_reader)
-        with open(csv_filename, "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=4)
+        with open(csv_filename, mode='r', encoding='utf-8') as csv_file:
+            reader = csv.DictReader(csv_file)
+            data = list(reader)
+
+        with open('data.json', mode='w', encoding='utf-8') as json_file:
+            json.dump(data, json_file, indent=4)
 
         return True
-    except Exception as e:
-        print(f"Exception caught: {e}")
+    except FileNotFoundError:
+        return False
+    except Exception:
         return False

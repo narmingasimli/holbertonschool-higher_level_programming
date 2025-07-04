@@ -1,0 +1,2 @@
+-- SELECT TABLE IN MYSQL
+SELECT * FROM first_table;

@@ -1,1 +1,2 @@
-SELECT COUNT(*) FROM first_table WHERE ID=89
+-- 8-count_89.sql
+SELECT COUNT(*) FROM first_table WHERE id = 89;

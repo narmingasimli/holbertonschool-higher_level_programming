@@ -1,2 +1,2 @@
--- 8-count_89.sql
+-- COUNT WRITE ID IN MYSQL
 SELECT COUNT(*) FROM first_table WHERE id = 89;

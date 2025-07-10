@@ -1,1 +1,1 @@
-EADME.md SQL code
+README.md SQL code
